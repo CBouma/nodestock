@@ -1,1 +1,9 @@
-<h1>Hello World from Handlebars, yes it's working now!</h1>
+<h1>Stock Details</h1>
+<p>{{ stock }}</p>
+<br/>
+{{stock.companyName}} ({{stock.symbol}})
+<br/>
+
+{{#each stock}}
+    {{@key}} | {{this}}<br/>
+    {{/each}}
