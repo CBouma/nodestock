@@ -5,7 +5,7 @@ const exphbs = require('express-handlebars');
 const PORT = process.env.PORT || 5000;
 const request = require('request');
 
-// API Key from IEX pk_0d853cf8f1e646cab0a0580dae9eb4ba
+// API Key from https://iexcloud.io/ pk_0d853cf8f1e646cab0a0580dae9eb4ba
 // Create Call API function
 function callAPI(finishedAPI){
 request ('https://cloud.iexapis.com/stable/stock/fb/quote?token=pk_0d853cf8f1e646cab0a0580dae9eb4ba', {json:true}, (err, res, body) => {

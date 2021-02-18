@@ -1,8 +1,8 @@
-<h1>Stock Details</h1>
-<p>{{ stock }}</p>
+<h1>{{stock.companyName}} | ({{stock.symbol}})</h1>
 <br/>
-{{stock.companyName}} ({{stock.symbol}})
-<br/>
+<p><strong>Price:</strong> ${{stock.latestPrice}} on {{stock.latestTime}}</p><br/>
+
+
 
 {{#each stock}}
     {{@key}} | {{this}}<br/>
